@@ -6,13 +6,14 @@ enable_testing()
 
 add_subdirectory(googletest)
 
-file(GLOB_RECURSE google_test_trial_SRC "src/*.cpp")
+file(GLOB_RECURSE google_test_trial_SRC "src/*.cpp" "test/*.cpp")
 
 set(google_test_trial_HEADERS
 )
 
 set(google_test_trial_INCLUDE_DIRS
   googletest/googletest/include
+  include
 )
 
 set(google_test_trial_LIB_DIRS
