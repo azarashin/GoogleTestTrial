@@ -6,9 +6,7 @@ enable_testing()
 
 add_subdirectory(googletest)
 
-set(google_test_trial_SRC
-  sample.cpp
-)
+file(GLOB_RECURSE google_test_trial_SRC "src/*.cpp")
 
 set(google_test_trial_HEADERS
 )
